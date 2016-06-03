@@ -243,6 +243,18 @@ $('.ppp').text(reject_repa.comment);
 
 }*/
 
+$("#drivera").click(function(){
+  //alert('driver');
+  $("#ownerhide").hide();
+  $("#driverhide").show();
+
+});
+$("#ownera").click(function(){
+  //alert('driver');
+  $("#driverhide").hide();
+   $("#ownerhide").show();
+});
+
 $('.hhhh').text('Subject Name : '+user_obja.First_Name+' '+user_obja.Last_Name);
 $('.pppp').text('Type : '+user_obja.verification_for);
 

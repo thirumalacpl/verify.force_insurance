@@ -3855,8 +3855,12 @@ $(document).ready(function(){
     </div>
     <br>
 
-<button class="butt" style="background-color:rgb(84, 86, 107);color:white;border-radius:20px;margin-top:5px;margin-bottom:5px">Click Here To View Personal Details</button> 
+<!-- <button style="background-color:rgb(84, 86, 107);color:white;border-radius:20px;margin-top:5px;margin-bottom:5px">Click Here To View Personal Details</button>  -->
 
+<div data-role="collapsible">
+  <h1 class="butt" style="color:#12A89D;background-color:#E8E8E8;font-weight:800" >Click Here To View Personal Details</h1>
+
+</div>
     <!--personal deatials start hide help div start-->
 <div class="pp">
 
@@ -3915,7 +3919,7 @@ $(document).ready(function(){
       <div >
 
 
-        <ul data-role="nd2tabs" data-swipe="true" style="background-color:#54566B">
+        <ul data-role="nd2tabs" data-swipe="true" style="background-color:#6B6B80">
           <li data-tab="friends">Accident Details</li>
           <li data-tab="work" data-tab-active="true">FIR Details</li>
           <li data-tab="holiday">Driver & Owner Details</li>
@@ -3927,29 +3931,74 @@ $(document).ready(function(){
 
       <div role="main" class="ui-content wow fadeIn" data-inset="false" data-wow-delay="0.2s">
 
+<!--accident details start-->
           <div data-role="nd2tab"
                 data-tab="friends">
 
    <div class="nd2-card">
-<h1 style="background-color:#54566B;margin:5px">Accident Details</h1>
+<h1 style="background-color:#6B6B80;margin:5px">Accident Details</h1>
       
 <div id="lii_newinui">
   <div class="ui-grid-solo pri_list">
     <div class="ui-block-a">
 
 <ul id="">
-<li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-1:'+servant_educa.add_one+':dsafas percent images primary address state education address image gallery</p></li><li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-2:'+servant_educa.add_two+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/pincode.png" alt="" class="li_img_pri"><p class="li_p_pri">Pincode:'+servant_educa.pincode+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/city.png" alt="" class="li_img_pri"><p class="li_p_pri">City:'+servant_educa.city_name+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/state.png" alt="" class="li_img_pri"><p class="li_p_pri">State:'+servant_educa.state+'</p></li>
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name:</span><span class="fonnt">+servant_educa.add_one+</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">MACT Number:</span><span class="fonnt">+servant_educa.add_two+</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Insurance Name:</span><span class="fonnt">+servant_educa.pincode+</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of Accident and Time:</span><span class="fonnt">+servant_educa.city_name+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Speed of vehicle:</span><span class="fonnt">+servant_educa.state+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Odometer reading:</span><span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Exact Place of Accident including Address/Spot of Accident with LandMark:</span><span class="fonnt">+servant_educa.state+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Location of the Accident:</span><span class="fonnt">+servant_educa.state+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Purpose of travel at the time of Accident:</span>'<span class="fonnt">+servant_educa.state+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">No. of people travelling at the time of Accident and in what capacity:</span><span class="fonnt">+servant_educa.state+</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Details of third party involved in the accident:</span><span class="fonnt">+servant_educa.state+</span></p></li>
 </ul>
-
-<p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
-<p>Location of the Accident</p>
-<p>Purpose of travel at the time of Accident</p>
+<div style="text-align:center;background-color:#6B6B80;color:white"><h4>Details of persons injured/deceased</h4></div>
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name:</span>'<span class="fonnt">+servant_educa.add_one+</span>'</p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Address:</span>'<span class="fonnt">+servant_educa.add_two+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact:</span>'<span class="fonnt">+servant_educa.pincode+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Passenger/dr/tp:</span>'<span class="fonnt">+servant_educa.city_name+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Nature of injury:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Origin of the vehicle:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Destination of the vehicle:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Details of any first aid provided and for what injury for each injured/deceased:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li>
+</ul>
+<div style="text-align:center;background-color:#6B6B80;color:white"><h4>Date and Time of first admission to nearest hospital</h4></div>
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Date and Time:</span>'<span class="fonnt">+servant_educa.add_one+</span>'</p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name of the hospital:</span>'<span class="fonnt">+servant_educa.add_two+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Address of the hospital:</span>'<span class="fonnt">+servant_educa.pincode+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Distance of the hospital from the site of accident:</span>'<span class="fonnt">+servant_educa.city_name+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Name and details of the big hospital/ Medical centers between the site of accident and the hospital of Admission:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">State:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">City:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li>
+</ul>
    </div>
    </div>
  </div>
 </div>
 
-          </div>
+
+   <div class="nd2-card">
+<h1 style="background-color:#6B6B80;margin:5px">Vehicle Details</h1>
+      
+<div id="lii_newinui">
+  <div class="ui-grid-solo pri_list">
+    <div class="ui-block-a">
+
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Registration No:</span>'<span class="fonnt">+servant_educa.add_one+</span>'</p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Date of Registration</span>'<span class="fonnt">+servant_educa.add_two+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Purchase date of vehicle:</span>'<span class="fonnt">+servant_educa.pincode+</span>'</p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Type of vehicle:</span>'<span class="fonnt">+servant_educa.city_name+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Make and Model of the vehicle:</span>'<span class="fonnt">+servant_educa.state+</span>'</p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Colour of vehicle:</span>'<span class="fonnt">+Engine No.state+'</span></p></li><li class="li_hei"> <p class="li_p_pri"><span class="fonn">Chassis No:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Kilometers run:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Date of transfer (if applicable):</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Purpose of vehicle:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">FC details of the vehicle if applicable:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Is the vehicle hypothecated:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Details of the Opposite Vehicle:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+<li class="li_hei"> <p class="li_p_pri"><span class="fonn">Name and Owner of the Opposite Vehicle:</span><span class="fonnt">'+servant_educa.state+'</span></p></li>
+</ul>
+
+
+   </div>
+   </div>
+ </div>
+</div>
+
+<h1 style="background-color:#6B6B80;margin:5px">Scene of Crime</h1>
+      
+<div id="lii_newinui">
+  <div class="ui-grid-solo pri_list">
+    <div class="ui-block-a">
+
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Rough sketch describing of the road map and vehicle position at the time of accident:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Availability of critical observation such as road blocks, speed brakers, speed limit signs at the SOC:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Longitude/Latitude:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Any other reveleant information:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+</ul>
+
+   </div>
+   </div>
+ </div>
+</div>
+<!--accident details end-->
+         
 
           <div data-role="nd2tab"
                 data-tab="work">
@@ -3963,17 +4012,20 @@ $(document).ready(function(){
     <div class="ui-block-a">
 
 <ul id="">
-<li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-1:'+servant_educa.add_one+':dsafas percent images primary address state education address image gallery</p></li><li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-2:'+servant_educa.add_two+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/pincode.png" alt="" class="li_img_pri"><p class="li_p_pri">Pincode:'+servant_educa.pincode+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/city.png" alt="" class="li_img_pri"><p class="li_p_pri">City:'+servant_educa.city_name+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/state.png" alt="" class="li_img_pri"><p class="li_p_pri">State:'+servant_educa.state+'</p></li>
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name of Police Station:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Address of Police Station:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of FIR:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">FIR No:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Investigating Officers details:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Any delay in filing the FIR:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Vehicle Details mentioned in the FIR:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Details of the Charge sheet:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
 </ul>
 
-<p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
-<p>Location of the Accident</p>
-<p>Purpose of travel at the time of Accident</p>
    </div>
    </div>
  </div>
-
              </div>
+
           </div>
 
           <div data-role="nd2tab"
@@ -3981,28 +4033,7 @@ $(document).ready(function(){
 
 
 
-                <!-- Simple Card with Title !-->
-
-                <div class="nd2-card">
-
-         <h1 style="background-color:#54566B;margin:5px">DRIVER & OWNER Details</h1>
-      
-<div id="lii_newinui">
-  <div class="ui-grid-solo pri_list">
-    <div class="ui-block-a">
-
-<ul id="">
-<li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-1:'+servant_educa.add_one+':dsafas percent images primary address state education address image gallery</p></li><li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-2:'+servant_educa.add_two+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/pincode.png" alt="" class="li_img_pri"><p class="li_p_pri">Pincode:'+servant_educa.pincode+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/city.png" alt="" class="li_img_pri"><p class="li_p_pri">City:'+servant_educa.city_name+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/state.png" alt="" class="li_img_pri"><p class="li_p_pri">State:'+servant_educa.state+'</p></li>
-</ul>
-
-<p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
-<p>Location of the Accident</p>
-<p>Purpose of travel at the time of Accident</p>
-   </div>
-   </div>
- </div>
-
-                </div>
+    
 
 
 
@@ -4011,21 +4042,71 @@ $(document).ready(function(){
                 <div class="nd2-card">
 
                <h1 style="background-color:#54566B;margin:5px">DRIVER & OWNER Details</h1>
-      
-<div id="lii_newinui">
+
+       <input type="radio" name="radio-choice-v-6" id="drivera" value="on" checked="checked">
+        <label for="drivera">Driver</label>
+           <input type="radio" name="radio-choice-v-6" id="ownera" value="on" checked="checked">
+        <label for="ownera">Owner</label>
+<!--driver details start-->
+<div id="driverhide">
   <div class="ui-grid-solo pri_list">
     <div class="ui-block-a">
-
+                               <h1 style="color:black">Driver Details</h1>
 <ul id="">
-<li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-1:'+servant_educa.add_one+':dsafas percent images primary address state education address image gallery</p></li><li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-2:'+servant_educa.add_two+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/pincode.png" alt="" class="li_img_pri"><p class="li_p_pri">Pincode:'+servant_educa.pincode+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/city.png" alt="" class="li_img_pri"><p class="li_p_pri">City:'+servant_educa.city_name+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/state.png" alt="" class="li_img_pri"><p class="li_p_pri">State:'+servant_educa.state+'</p></li>
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name of the Driver:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Address of the Driver:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact No:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Select Gender :</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Type of DL :</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Is the Driver is :</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">DOB:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Driving Licence No:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Issuing Authority:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of issue:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+'<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of Expiry:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Vehicles authorized to drive:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Badge No:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date if Applicable:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Provide opposite Vehicle's driver details:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Is the driver under any influence of intoxicating liquor or drugs:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Is the driver involved in any accident in the last two years:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">If relative provide details about the nature of relationship with the insured:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">if Paid driver, how long he/she has been in the current employment:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Any other relevant information:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>'
 </ul>
 
-<p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
-<p>Location of the Accident</p>
-<p>Purpose of travel at the time of Accident</p>
    </div>
    </div>
  </div>
+ <!--driver details end-->
+ <!--driver owner details start-->
+<div id="ownerhide">
+  <div class="ui-grid-solo pri_list">
+    <div class="ui-block-a">
+                          <h1 style="color:black">Owner Details</h1>
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Name :</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Address :</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact No:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Select Gender :</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">DOB:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Driving Licence No:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Issuing Authority:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of issue:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+'<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of Expiry:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Vehicles authorized to drive:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Badge No:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date if Applicable:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Provide opposite Vehicle's driver details:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Driver involved in any accident in last 2 years:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Is the driver involved in any accident in the last two years:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Is the driver under any influence of intoxicating liquor or drugs:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Any other relevant information:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>'
+</ul>
+
+   </div>
+   </div>
+ </div>
+ <!--driver owner details end-->
 
                 </div>
           </div>
@@ -4039,14 +4120,73 @@ $(document).ready(function(){
 <div id="lii_newinui">
   <div class="ui-grid-solo pri_list">
     <div class="ui-block-a">
-
+<h1 style="background-color:#6B6B80;margin:5px">Insured Person's Detail</h1>
 <ul id="">
-<li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-1:'+servant_educa.add_one+':dsafas percent images primary address state education address image gallery</p></li><li class="li_hei">  <div class="li_pri_left"></div><img src="images/primary/address.png" alt="" class="li_img_pri"><p class="li_p_pri">Address-2:'+servant_educa.add_two+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/pincode.png" alt="" class="li_img_pri"><p class="li_p_pri">Pincode:'+servant_educa.pincode+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/city.png" alt="" class="li_img_pri"><p class="li_p_pri">City:'+servant_educa.city_name+'</p></li><li class="li_hei">  <div class="li_pri_left"></div> <img src="images/primary/state.png" alt="" class="li_img_pri"><p class="li_p_pri">State:'+servant_educa.state+'</p></li>
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person name:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person address:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact No:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Select Gender:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">DOB:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Average yearly income:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Pan and Aadhar details (if any):</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of issue and expiry of the policy:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Insured Profession:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Number of members in the family:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many of them are above 18+ and drive vehicle:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many vehicles do you have:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Usage of vehicles:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
 </ul>
 
-<p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
-<p>Location of the Accident</p>
-<p>Purpose of travel at the time of Accident</p>
+   </div>
+   </div>
+ </div>
+<h1 style="background-color:#6B6B80;margin:5px">Details of Person</h1>
+    <input type="radio" name="radio-choice-v-6" id="Injured" value="on" checked="checked">
+        <label for="Injured"> Injured</label>
+           <input type="radio" name="radio-choice-v-6" id="Deceased" value="on" checked="checked">
+        <label for="Deceased">Deceased</label>
+
+        <div id="lii_newinui">
+  <div class="ui-grid-solo pri_list">
+    <div class="ui-block-a">
+<h1 style="background-color:#6B6B80;margin:5px">Injured Person's Detail</h1>
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person name:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person address:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact No:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Select Gender:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">DOB:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Average yearly income:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Pan and Aadhar details (if any):</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of issue and expiry of the policy:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Insured Profession:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Number of members in the family:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many of them are above 18+ and drive vehicle:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many vehicles do you have:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Usage of vehicles:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+</ul>
+
+   </div>
+   </div>
+ </div>
+
+         <div id="lii_newinui">
+  <div class="ui-grid-solo pri_list">
+    <div class="ui-block-a">
+<h1 style="background-color:#6B6B80;margin:5px">Injured Person's Detail</h1>
+<ul id="">
+<li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person name:</span><span class="fonnt">'+servant_educa.add_one+'</span></p></li><li class="li_hei">  <p class="li_p_pri"><span class="fonn">Vehicle insured person address:</span><span class="fonnt">'+servant_educa.add_two+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Contact No:</span><span class="fonnt">'+servant_educa.pincode+'</span></p></li><li class="li_hei">   <p class="li_p_pri"><span class="fonn">Select Gender:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">DOB:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">State:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">City:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Average yearly income:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Pan and Aadhar details (if any):</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Date of issue and expiry of the policy:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Insured Profession:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Number of members in the family:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many of them are above 18+ and drive vehicle:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">How many vehicles do you have:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+<li class="li_hei">   <p class="li_p_pri"><span class="fonn">Usage of vehicles:</span><span class="fonnt">'+servant_educa.city_name+'</span></p></li>
+</ul>
+
    </div>
    </div>
  </div>
@@ -4070,13 +4210,15 @@ $(document).ready(function(){
 <p>Exact Place of Accident including Address/Spot of Accident with LandMark</p>
 <p>Location of the Accident</p>
 <p>Purpose of travel at the time of Accident</p>
+
+
    </div>
    </div>
  </div>
           </div>
 
           </div>
-
+</div>
       </div>
 
 

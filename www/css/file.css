@@ -2429,3 +2429,16 @@ font-size: 20px !important;
 }
 
 }
+
+.fonn{
+    font-size: 25px;
+        color: #085698;
+        font-weight: 800;
+}
+
+.fonnt{
+      font-size: 25px;
+        color: #12A89D;
+        font-weight: 800;
+        padding: 15px
+}
